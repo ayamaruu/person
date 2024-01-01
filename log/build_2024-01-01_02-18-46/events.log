@@ -1,0 +1,39 @@
+[0.000000] (-) TimerEvent: {}
+[0.000899] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.001004] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.098562] (-) TimerEvent: {}
+[0.199106] (-) TimerEvent: {}
+[0.299929] (-) TimerEvent: {}
+[0.400442] (-) TimerEvent: {}
+[0.500929] (-) TimerEvent: {}
+[0.601400] (-) TimerEvent: {}
+[0.615020] (mypkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/aya/ros2_ws/build/mypkg/build', 'install', '--record', '/home/aya/ros2_ws/build/mypkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/aya/ros2_ws/src/mypkg', 'env': {'USER': 'aya', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/aya', 'OLDPWD': '/home/aya', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aya/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'aya', 'NAME': 'ayaka', 'WSL_INTEROP': '/run/WSL/10895_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/koriz/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koriz/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/aya/ros2_ws/install/mypkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/home/aya/ros2_ws/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aya/ros2_ws/build/mypkg/prefix_override:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[0.701648] (-) TimerEvent: {}
+[0.788031] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.789106] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[0.789389] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[0.789796] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[0.789901] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[0.789990] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[0.791091] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.791919] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.792090] (mypkg) StdoutLine: {'line': b'running build\n'}
+[0.792236] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[0.792504] (mypkg) StdoutLine: {'line': b'running install\n'}
+[0.792865] (mypkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[0.793197] (mypkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.793538] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.794748] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[0.795209] (mypkg) StdoutLine: {'line': b'copying package.xml -> /home/aya/ros2_ws/install/mypkg/share/mypkg\n'}
+[0.795577] (mypkg) StdoutLine: {'line': b'copying launch/talk_listen.launch.py -> /home/aya/ros2_ws/install/mypkg/share/mypkg\n'}
+[0.795940] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.797341] (mypkg) StdoutLine: {'line': b"removing '/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.798098] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info\n'}
+[0.799541] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.801766] (-) TimerEvent: {}
+[0.818149] (mypkg) StdoutLine: {'line': b'Installing listener script to /home/aya/ros2_ws/install/mypkg/lib/mypkg\n'}
+[0.818564] (mypkg) StdoutLine: {'line': b'Installing talker script to /home/aya/ros2_ws/install/mypkg/lib/mypkg\n'}
+[0.818974] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/aya/ros2_ws/build/mypkg/install.log'\n"}
+[0.838521] (mypkg) CommandEnded: {'returncode': 0}
+[0.879792] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[0.880923] (-) EventReactorShutdown: {}

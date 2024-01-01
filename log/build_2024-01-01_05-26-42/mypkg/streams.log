@@ -1,0 +1,24 @@
+[0.616s] Invoking command in '/home/aya/ros2_ws/src': PYTHONPATH=/home/aya/ros2_ws/build/mypkg/prefix_override:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mypkg build --build-base /home/aya/ros2_ws/build/mypkg/build install --record /home/aya/ros2_ws/build/mypkg/install.log --single-version-externally-managed
+[0.835s] running egg_info
+[0.836s] writing ../build/mypkg/mypkg.egg-info/PKG-INFO
+[0.837s] writing dependency_links to ../build/mypkg/mypkg.egg-info/dependency_links.txt
+[0.838s] writing entry points to ../build/mypkg/mypkg.egg-info/entry_points.txt
+[0.838s] writing requirements to ../build/mypkg/mypkg.egg-info/requires.txt
+[0.839s] writing top-level names to ../build/mypkg/mypkg.egg-info/top_level.txt
+[0.841s] reading manifest file '../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.842s] writing manifest file '../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.843s] running build
+[0.843s] running build_py
+[0.844s] running install
+[0.844s] running install_lib
+[0.844s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.845s]   warnings.warn(
+[0.846s] running install_data
+[0.847s] running install_egg_info
+[0.849s] removing '/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.850s] Copying ../build/mypkg/mypkg.egg-info to /home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[0.851s] running install_scripts
+[0.890s] Installing listener script to /home/aya/ros2_ws/install/mypkg/lib/mypkg
+[0.890s] Installing talker script to /home/aya/ros2_ws/install/mypkg/lib/mypkg
+[0.891s] writing list of installed files to '/home/aya/ros2_ws/build/mypkg/install.log'
+[0.920s] Invoked command in '/home/aya/ros2_ws/src' returned '0': PYTHONPATH=/home/aya/ros2_ws/build/mypkg/prefix_override:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mypkg build --build-base /home/aya/ros2_ws/build/mypkg/build install --record /home/aya/ros2_ws/build/mypkg/install.log --single-version-externally-managed
