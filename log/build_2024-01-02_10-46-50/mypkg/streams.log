@@ -1,0 +1,26 @@
+[0.735s] Invoking command in '/home/aya/ros2_ws/src/mypkg': PYTHONPATH=/home/aya/ros2_ws/build/mypkg/prefix_override:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/aya/ros2_ws/build/mypkg/build install --record /home/aya/ros2_ws/build/mypkg/install.log --single-version-externally-managed
+[0.963s] running egg_info
+[0.964s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[0.964s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[0.964s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[0.965s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[0.965s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[0.967s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.969s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.969s] running build
+[0.969s] running build_py
+[0.969s] running install
+[0.969s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.970s]   warnings.warn(
+[0.970s] running install_lib
+[0.972s] byte-compiling /home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg/listener.py to listener.cpython-310.pyc
+[0.973s] Sorry: IndentationError: unexpected indent (listener.py, line 16)
+[0.973s] running install_data
+[0.975s] running install_egg_info
+[0.977s] removing '/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.978s] Copying ../../build/mypkg/mypkg.egg-info to /home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[0.979s] running install_scripts
+[1.003s] Installing listener script to /home/aya/ros2_ws/install/mypkg/lib/mypkg
+[1.003s] Installing talker script to /home/aya/ros2_ws/install/mypkg/lib/mypkg
+[1.004s] writing list of installed files to '/home/aya/ros2_ws/build/mypkg/install.log'
+[1.036s] Invoked command in '/home/aya/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/aya/ros2_ws/build/mypkg/prefix_override:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/aya/ros2_ws/build/mypkg/build install --record /home/aya/ros2_ws/build/mypkg/install.log --single-version-externally-managed

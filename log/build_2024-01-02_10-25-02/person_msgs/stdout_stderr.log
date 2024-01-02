@@ -1,0 +1,7 @@
+[31mCMake Error at CMakeLists.txt:27 (endif):
+  Flow control statements are not properly nested.
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/aya/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:747: cmake_check_build_system] Error 1

@@ -1,0 +1,353 @@
+[0.000000] (-) TimerEvent: {}
+[0.000201] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.000231] (person_msgs) JobQueued: {'identifier': 'person_msgs', 'dependencies': OrderedDict()}
+[0.000278] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.065699] (person_msgs) JobStarted: {'identifier': 'person_msgs'}
+[0.100850] (-) TimerEvent: {}
+[0.209694] (-) TimerEvent: {}
+[0.318491] (-) TimerEvent: {}
+[0.393269] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'cmake'}
+[0.396167] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'build'}
+[0.396240] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aya/ros2_ws/build/person_msgs', '--', '-j8', '-l8'], 'cwd': '/home/aya/ros2_ws/build/person_msgs', 'env': OrderedDict([('USER', 'aya'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/aya/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aya'), ('OLDPWD', '/home/aya/ros2_ws/src/person_msgs/srv'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aya/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aya'), ('NAME', 'ayaka'), ('WSL_INTEROP', '/run/WSL/19807_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/koriz/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koriz/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/aya/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.418664] (-) TimerEvent: {}
+[0.421401] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.518831] (-) TimerEvent: {}
+[0.566525] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.567841] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.570285] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.619022] (-) TimerEvent: {}
+[0.718853] (mypkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/aya/ros2_ws/build/mypkg/build', 'install', '--record', '/home/aya/ros2_ws/build/mypkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/aya/ros2_ws/src/mypkg', 'env': {'USER': 'aya', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/aya/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/aya', 'OLDPWD': '/home/aya/ros2_ws/src/person_msgs/srv', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aya/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'aya', 'NAME': 'ayaka', 'WSL_INTEROP': '/run/WSL/19807_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/koriz/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koriz/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/home/aya/ros2_ws/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aya/ros2_ws/build/mypkg/prefix_override:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/aya/ros2_ws/install/person_msgs', 'WSLENV': ''}, 'shell': False}
+[0.723042] (-) TimerEvent: {}
+[0.742482] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.823640] (-) TimerEvent: {}
+[0.924521] (-) TimerEvent: {}
+[0.938790] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.939401] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[0.939697] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[0.940021] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[0.940314] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[0.940709] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[0.942978] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.944085] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.944293] (mypkg) StdoutLine: {'line': b'running build\n'}
+[0.944400] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[0.944689] (mypkg) StdoutLine: {'line': b'running install\n'}
+[0.944884] (mypkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[0.944973] (mypkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.945303] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.947210] (mypkg) StdoutLine: {'line': b'byte-compiling /home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg/listener.py to listener.cpython-310.pyc\n'}
+[0.947573] (mypkg) StderrLine: {'line': b'Sorry: IndentationError: unexpected indent (listener.py, line 16)\n'}
+[0.947812] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[0.948203] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.949747] (mypkg) StdoutLine: {'line': b"removing '/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.950129] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info\n'}
+[0.950944] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.980225] (mypkg) StdoutLine: {'line': b'Installing listener script to /home/aya/ros2_ws/install/mypkg/lib/mypkg\n'}
+[0.980892] (mypkg) StdoutLine: {'line': b'Installing talker script to /home/aya/ros2_ws/install/mypkg/lib/mypkg\n'}
+[0.981149] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/aya/ros2_ws/build/mypkg/install.log'\n"}
+[1.006876] (mypkg) CommandEnded: {'returncode': 0}
+[1.025392] (-) TimerEvent: {}
+[1.051584] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.065900] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[1.126150] (-) TimerEvent: {}
+[1.227351] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.227539] (-) TimerEvent: {}
+[1.336276] (-) TimerEvent: {}
+[1.437470] (-) TimerEvent: {}
+[1.478636] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.499730] (person_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.523020] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.523219] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.523281] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.534207] (person_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.537918] (-) TimerEvent: {}
+[1.541634] (person_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.584639] (person_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.589538] (person_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/aya/ros2_ws/build/person_msgs\n'}
+[1.613264] (person_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.623462] (person_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.629988] (person_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_person_msgs\n'}
+[1.638712] (-) TimerEvent: {}
+[1.745833] (-) TimerEvent: {}
+[1.854593] (-) TimerEvent: {}
+[1.927646] (person_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.928846] (person_msgs) StdoutLine: {'line': b'writing person_msgs.egg-info/PKG-INFO\n'}
+[1.929295] (person_msgs) StdoutLine: {'line': b'writing dependency_links to person_msgs.egg-info/dependency_links.txt\n'}
+[1.929689] (person_msgs) StdoutLine: {'line': b'writing top-level names to person_msgs.egg-info/top_level.txt\n'}
+[1.932453] (person_msgs) StdoutLine: {'line': b"reading manifest file 'person_msgs.egg-info/SOURCES.txt'\n"}
+[1.933371] (person_msgs) StdoutLine: {'line': b"writing manifest file 'person_msgs.egg-info/SOURCES.txt'\n"}
+[1.956508] (-) TimerEvent: {}
+[1.962326] (person_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_person_msgs_egg\n'}
+[2.037149] (person_msgs) StdoutLine: {'line': b'[  5%] Built target person_msgs__cpp\n'}
+[2.040238] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_generator_c\x1b[0m\n'}
+[2.049445] (person_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.049721] (person_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.049837] (person_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.053567] (person_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_generator_c.dir/rosidl_generator_c/person_msgs/msg/detail/person__functions.c.o\x1b[0m\n'}
+[2.054018] (person_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_generator_c.dir/rosidl_generator_c/person_msgs/srv/detail/query__functions.c.o\x1b[0m\n'}
+[2.056835] (-) TimerEvent: {}
+[2.158087] (-) TimerEvent: {}
+[2.243376] (person_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libperson_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.258532] (-) TimerEvent: {}
+[2.359023] (-) TimerEvent: {}
+[2.393710] (person_msgs) StdoutLine: {'line': b'[ 20%] Built target person_msgs__rosidl_generator_c\n'}
+[2.408005] (person_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.408524] (person_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.408915] (person_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.448748] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.459219] (-) TimerEvent: {}
+[2.465077] (person_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/person_msgs/msg/person__type_support.cpp.o\x1b[0m\n'}
+[2.465374] (person_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/person_msgs/srv/query__type_support.cpp.o\x1b[0m\n'}
+[2.537550] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.555597] (person_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/person_msgs/msg/detail/person__type_support.cpp.o\x1b[0m\n'}
+[2.558534] (person_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/person_msgs/srv/detail/query__type_support.cpp.o\x1b[0m\n'}
+[2.559328] (-) TimerEvent: {}
+[2.564987] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.583516] (person_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/person_msgs/msg/detail/dds_fastrtps/person__type_support.cpp.o\x1b[0m\n'}
+[2.659584] (-) TimerEvent: {}
+[2.760142] (-) TimerEvent: {}
+[2.860803] (-) TimerEvent: {}
+[2.961452] (-) TimerEvent: {}
+[2.963175] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.980240] (person_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/person_msgs/msg/person__type_support.cpp.o\x1b[0m\n'}
+[3.061912] (-) TimerEvent: {}
+[3.064505] (person_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/person_msgs/srv/query__type_support.cpp.o\x1b[0m\n'}
+[3.074874] (person_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/person_msgs/srv/detail/dds_fastrtps/query__type_support.cpp.o\x1b[0m\n'}
+[3.081401] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.086795] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.086974] (person_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libperson_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.100855] (person_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/msg/detail/person__type_support.c.o\x1b[0m\n'}
+[3.111405] (person_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/person_msgs/msg/detail/person__type_support_c.cpp.o\x1b[0m\n'}
+[3.130731] (person_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libperson_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.162502] (-) TimerEvent: {}
+[3.164611] (person_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/person_msgs/srv/detail/query__type_support.c.o\x1b[0m\n'}
+[3.232801] (person_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libperson_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.238946] (person_msgs) StdoutLine: {'line': b'[ 64%] Built target person_msgs__rosidl_typesupport_cpp\n'}
+[3.257739] (person_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/person_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/person_msgs/srv/detail/query__type_support_c.cpp.o\x1b[0m\n'}
+[3.262796] (-) TimerEvent: {}
+[3.295888] (person_msgs) StdoutLine: {'line': b'[ 66%] Built target person_msgs__rosidl_typesupport_c\n'}
+[3.363434] (-) TimerEvent: {}
+[3.396864] (person_msgs) StdoutLine: {'line': b'[ 66%] Built target person_msgs__rosidl_typesupport_introspection_c\n'}
+[3.400505] (person_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libperson_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.464237] (-) TimerEvent: {}
+[3.565465] (-) TimerEvent: {}
+[3.568011] (person_msgs) StdoutLine: {'line': b'[ 69%] Built target person_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.666242] (-) TimerEvent: {}
+[3.767682] (-) TimerEvent: {}
+[3.813280] (person_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libperson_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.813609] (person_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libperson_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.868626] (-) TimerEvent: {}
+[3.971112] (-) TimerEvent: {}
+[3.980773] (person_msgs) StdoutLine: {'line': b'[ 74%] Built target person_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.983588] (person_msgs) StdoutLine: {'line': b'[ 74%] Built target person_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.005149] (person_msgs) StdoutLine: {'line': b'[ 74%] Built target person_msgs\n'}
+[4.027063] (person_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.071556] (-) TimerEvent: {}
+[4.174878] (-) TimerEvent: {}
+[4.283828] (-) TimerEvent: {}
+[4.392800] (-) TimerEvent: {}
+[4.501665] (-) TimerEvent: {}
+[4.610437] (-) TimerEvent: {}
+[4.628299] (person_msgs) StdoutLine: {'line': b'[ 76%] Built target person_msgs__py\n'}
+[4.637621] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_generator_py\x1b[0m\n'}
+[4.651547] (person_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_generator_py.dir/rosidl_generator_py/person_msgs/msg/_person_s.c.o\x1b[0m\n'}
+[4.652069] (person_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_generator_py.dir/rosidl_generator_py/person_msgs/srv/_query_s.c.o\x1b[0m\n'}
+[4.710836] (-) TimerEvent: {}
+[4.811676] (-) TimerEvent: {}
+[4.850224] (person_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/person_msgs/libperson_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.912258] (-) TimerEvent: {}
+[4.986850] (person_msgs) StdoutLine: {'line': b'[ 84%] Built target person_msgs__rosidl_generator_py\n'}
+[4.999254] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.999540] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[5.000438] (person_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target person_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[5.012880] (-) TimerEvent: {}
+[5.016348] (person_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.016681] (person_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.016828] (person_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/person_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.113655] (-) TimerEvent: {}
+[5.164359] (person_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.164688] (person_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.177092] (person_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.214451] (-) TimerEvent: {}
+[5.262758] (person_msgs) StdoutLine: {'line': b'[100%] Built target person_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.265462] (person_msgs) StdoutLine: {'line': b'[100%] Built target person_msgs__rosidl_typesupport_c__pyext\n'}
+[5.284039] (person_msgs) StdoutLine: {'line': b'[100%] Built target person_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.296957] (person_msgs) CommandEnded: {'returncode': 0}
+[5.315959] (-) TimerEvent: {}
+[5.374448] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'install'}
+[5.384332] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aya/ros2_ws/build/person_msgs'], 'cwd': '/home/aya/ros2_ws/build/person_msgs', 'env': OrderedDict([('USER', 'aya'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/aya/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aya'), ('OLDPWD', '/home/aya/ros2_ws/src/person_msgs/srv'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aya/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aya'), ('NAME', 'ayaka'), ('WSL_INTEROP', '/run/WSL/19807_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/koriz/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koriz/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/aya/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[5.393918] (person_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.394405] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/ament_index/resource_index/rosidl_interfaces/person_msgs\n'}
+[5.395356] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs\n'}
+[5.395487] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg\n'}
+[5.395738] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail\n'}
+[5.395882] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__type_support.h\n'}
+[5.396167] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__functions.c\n'}
+[5.396372] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__functions.h\n'}
+[5.396501] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__struct.h\n'}
+[5.396712] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.396828] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/person.h\n'}
+[5.397042] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv\n'}
+[5.397341] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/query.h\n'}
+[5.397536] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail\n'}
+[5.397795] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__type_support.h\n'}
+[5.397993] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__functions.c\n'}
+[5.398333] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__functions.h\n'}
+[5.398503] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__struct.h\n'}
+[5.398576] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.sh\n'}
+[5.398645] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/environment/library_path.dsv\n'}
+[5.398885] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_c.so\n'}
+[5.399512] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_c.so" to ""\n'}
+[5.399615] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs\n'}
+[5.399833] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg\n'}
+[5.399910] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail\n'}
+[5.399972] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h\n'}
+[5.400157] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.400377] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv\n'}
+[5.400665] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail\n'}
+[5.400765] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_c.h\n'}
+[5.400836] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.401294] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.401532] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs\n'}
+[5.401628] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg\n'}
+[5.401706] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail\n'}
+[5.401834] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h\n'}
+[5.401906] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__type_support.c\n'}
+[5.402105] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.402192] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv\n'}
+[5.402354] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail\n'}
+[5.402421] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__type_support.c\n'}
+[5.402470] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__rosidl_typesupport_introspection_c.h\n'}
+[5.402616] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.403100] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.403305] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_c.so\n'}
+[5.403856] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.404131] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs\n'}
+[5.404196] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg\n'}
+[5.404252] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail\n'}
+[5.404309] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__struct.hpp\n'}
+[5.404440] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__builder.hpp\n'}
+[5.405133] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__traits.hpp\n'}
+[5.405583] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/person.hpp\n'}
+[5.405934] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv\n'}
+[5.406215] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail\n'}
+[5.406610] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__traits.hpp\n'}
+[5.406729] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__builder.hpp\n'}
+[5.407065] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__struct.hpp\n'}
+[5.407250] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/query.hpp\n'}
+[5.407342] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs\n'}
+[5.407441] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg\n'}
+[5.407520] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail\n'}
+[5.407598] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/dds_fastrtps\n'}
+[5.407810] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.408052] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.408152] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv\n'}
+[5.408239] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail\n'}
+[5.408357] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.408525] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/dds_fastrtps\n'}
+[5.408730] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.409252] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.409457] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs\n'}
+[5.409857] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg\n'}
+[5.410002] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail\n'}
+[5.410119] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__type_support.cpp\n'}
+[5.410183] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.410404] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv\n'}
+[5.410492] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail\n'}
+[5.410589] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.410672] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/include/person_msgs/person_msgs/srv/detail/query__type_support.cpp\n'}
+[5.410741] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.410795] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.410873] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_cpp.so\n'}
+[5.411226] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.411325] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.sh\n'}
+[5.411431] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/environment/pythonpath.dsv\n'}
+[5.411741] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs-0.0.0-py3.10.egg-info\n'}
+[5.411833] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.412177] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.412364] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.412447] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.412751] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs\n'}
+[5.413086] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.413542] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/msg\n'}
+[5.413678] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/msg/_person.py\n'}
+[5.413983] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/msg/__init__.py\n'}
+[5.414184] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/msg/_person_s.c\n'}
+[5.414510] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.414834] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/_person_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.415297] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/libperson_msgs__rosidl_generator_py.so\n'}
+[5.415854] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.416055] (-) TimerEvent: {}
+[5.416426] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/srv\n'}
+[5.416912] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/srv/_query_s.c\n'}
+[5.417130] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/srv/__init__.py\n'}
+[5.417316] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/srv/_query.py\n'}
+[5.417566] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/__init__.py\n'}
+[5.417846] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.418305] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/_person_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.465445] (person_msgs) StdoutLine: {'line': b"Listing '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs'...\n"}
+[5.465798] (person_msgs) StdoutLine: {'line': b"Compiling '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/__init__.py'...\n"}
+[5.465973] (person_msgs) StdoutLine: {'line': b"Listing '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/msg'...\n"}
+[5.466072] (person_msgs) StdoutLine: {'line': b"Compiling '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/msg/__init__.py'...\n"}
+[5.466183] (person_msgs) StdoutLine: {'line': b"Compiling '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/msg/_person.py'...\n"}
+[5.466285] (person_msgs) StdoutLine: {'line': b"Listing '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/srv'...\n"}
+[5.466397] (person_msgs) StdoutLine: {'line': b"Compiling '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/srv/__init__.py'...\n"}
+[5.466482] (person_msgs) StdoutLine: {'line': b"Compiling '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/srv/_query.py'...\n"}
+[5.471013] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.471329] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.471560] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.471962] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.472180] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.472579] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages/person_msgs/person_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.472807] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_py.so\n'}
+[5.473438] (person_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aya/ros2_ws/install/person_msgs/lib/libperson_msgs__rosidl_generator_py.so" to ""\n'}
+[5.473710] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.idl\n'}
+[5.473944] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.idl\n'}
+[5.474233] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/msg/Person.msg\n'}
+[5.474480] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/srv/Query.srv\n'}
+[5.474789] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Request.msg\n'}
+[5.474973] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/srv/Query_Response.msg\n'}
+[5.475201] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/ament_index/resource_index/package_run_dependencies/person_msgs\n'}
+[5.475427] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/ament_index/resource_index/parent_prefix_path/person_msgs\n'}
+[5.475623] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.sh\n'}
+[5.475928] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/environment/ament_prefix_path.dsv\n'}
+[5.476353] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/environment/path.sh\n'}
+[5.476434] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/environment/path.dsv\n'}
+[5.476492] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/local_setup.bash\n'}
+[5.476582] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/local_setup.sh\n'}
+[5.476768] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/local_setup.zsh\n'}
+[5.477029] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/local_setup.dsv\n'}
+[5.477219] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/package.dsv\n'}
+[5.477553] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/ament_index/resource_index/packages/person_msgs\n'}
+[5.477946] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_generator_cExport.cmake\n'}
+[5.478227] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.478584] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.478850] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.479023] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.479194] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.479429] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.479625] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.479790] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.480153] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.480248] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.480304] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.480371] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.480442] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.480512] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.480602] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.480675] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/export_person_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.480744] (person_msgs) StdoutLine: {'line': b'-- Installing: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.480807] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.480861] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.480914] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.480965] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.481051] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.481110] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.481164] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig.cmake\n'}
+[5.481222] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/cmake/person_msgsConfig-version.cmake\n'}
+[5.481274] (person_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aya/ros2_ws/install/person_msgs/share/person_msgs/package.xml\n'}
+[5.483604] (person_msgs) CommandEnded: {'returncode': 0}
+[5.517538] (-) TimerEvent: {}
+[5.627317] (-) TimerEvent: {}
+[5.703284] (person_msgs) JobEnded: {'identifier': 'person_msgs', 'rc': 0}
+[5.704953] (-) EventReactorShutdown: {}

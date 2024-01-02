@@ -1,0 +1,27 @@
+[0.000000] (-) TimerEvent: {}
+[0.001524] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.001614] (person_msgs) JobQueued: {'identifier': 'person_msgs', 'dependencies': OrderedDict()}
+[0.001676] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.078272] (person_msgs) JobStarted: {'identifier': 'person_msgs'}
+[0.101078] (-) TimerEvent: {}
+[0.202313] (-) TimerEvent: {}
+[0.303477] (-) TimerEvent: {}
+[0.408050] (-) TimerEvent: {}
+[0.483849] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'cmake'}
+[0.484498] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'build'}
+[0.485823] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aya/ros2_ws/build/person_msgs', '--', '-j8', '-l8'], 'cwd': '/home/aya/ros2_ws/build/person_msgs', 'env': OrderedDict([('USER', 'aya'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/aya/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aya'), ('OLDPWD', '/home/aya/ros2_ws/src/person_msgs'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aya/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aya'), ('NAME', 'ayaka'), ('WSL_INTEROP', '/run/WSL/19807_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/koriz/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koriz/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/aya/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.508266] (person_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:27 (endif):\n'}
+[0.508453] (-) TimerEvent: {}
+[0.508597] (person_msgs) StderrLine: {'line': b'  Flow control statements are not properly nested.\n'}
+[0.508699] (person_msgs) StderrLine: {'line': b'\n'}
+[0.508751] (person_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.508809] (person_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.508932] (person_msgs) StdoutLine: {'line': b'See also "/home/aya/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.510098] (person_msgs) StderrLine: {'line': b'gmake: *** [Makefile:747: cmake_check_build_system] Error 1\n'}
+[0.512797] (person_msgs) CommandEnded: {'returncode': 2}
+[0.609026] (-) TimerEvent: {}
+[0.643617] (person_msgs) JobEnded: {'identifier': 'person_msgs', 'rc': 2}
+[0.709640] (-) TimerEvent: {}
+[0.809445] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 'SIGINT'}
+[0.809972] (-) TimerEvent: {}
+[0.820778] (-) EventReactorShutdown: {}

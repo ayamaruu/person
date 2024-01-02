@@ -1,0 +1,9 @@
+[0.407s] Invoking command in '/home/aya/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/aya/ros2_ws/build/person_msgs -- -j8 -l8
+[0.442s] [31mCMake Error at CMakeLists.txt:27 (endif):
+[0.442s]   Flow control statements are not properly nested.
+[0.442s] 
+[0.442s] [0m
+[0.442s] -- Configuring incomplete, errors occurred!
+[0.443s] See also "/home/aya/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".
+[0.444s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[0.448s] Invoked command in '/home/aya/ros2_ws/build/person_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/aya/ros2_ws/build/person_msgs -- -j8 -l8

@@ -1,0 +1,104 @@
+[0.000000] (-) TimerEvent: {}
+[0.001729] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.001857] (person_msgs) JobQueued: {'identifier': 'person_msgs', 'dependencies': OrderedDict()}
+[0.001911] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.075458] (person_msgs) JobStarted: {'identifier': 'person_msgs'}
+[0.101813] (-) TimerEvent: {}
+[0.211070] (-) TimerEvent: {}
+[0.319874] (-) TimerEvent: {}
+[0.428951] (-) TimerEvent: {}
+[0.481202] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'cmake'}
+[0.483153] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'build'}
+[0.483350] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aya/ros2_ws/build/person_msgs', '--', '-j8', '-l8'], 'cwd': '/home/aya/ros2_ws/build/person_msgs', 'env': OrderedDict([('USER', 'aya'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/aya/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aya'), ('OLDPWD', '/home/aya'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aya/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aya'), ('NAME', 'ayaka'), ('WSL_INTEROP', '/run/WSL/19807_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/koriz/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koriz/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/aya/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.529221] (-) TimerEvent: {}
+[0.542009] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.630352] (-) TimerEvent: {}
+[0.716681] (person_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.717765] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.719670] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.722441] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.730712] (-) TimerEvent: {}
+[0.838982] (-) TimerEvent: {}
+[0.868435] (mypkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/aya/ros2_ws/build/mypkg/build', 'install', '--record', '/home/aya/ros2_ws/build/mypkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/aya/ros2_ws/src/mypkg', 'env': {'USER': 'aya', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/aya/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/aya', 'OLDPWD': '/home/aya', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aya/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'aya', 'NAME': 'ayaka', 'WSL_INTEROP': '/run/WSL/19807_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/koriz/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koriz/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/aya/ros2_ws/install/person_msgs:/home/aya/ros2_ws/install/mypkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/home/aya/ros2_ws/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aya/ros2_ws/build/mypkg/prefix_override:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/home/aya/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/aya/ros2_ws/install/person_msgs', 'WSLENV': ''}, 'shell': False}
+[0.902726] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.940926] (-) TimerEvent: {}
+[1.049749] (-) TimerEvent: {}
+[1.118113] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.119037] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[1.119555] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[1.120169] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[1.120312] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[1.120388] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[1.122324] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[1.123337] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[1.123445] (mypkg) StdoutLine: {'line': b'running build\n'}
+[1.123506] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[1.123698] (mypkg) StdoutLine: {'line': b'running install\n'}
+[1.123914] (mypkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.124060] (mypkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.124247] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.126025] (mypkg) StdoutLine: {'line': b'byte-compiling /home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg/listener.py to listener.cpython-310.pyc\n'}
+[1.126565] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[1.126763] (mypkg) StderrLine: {'line': b'Sorry: IndentationError: unexpected indent (listener.py, line 16)\n'}
+[1.127081] (mypkg) StdoutLine: {'line': b'copying package.xml -> /home/aya/ros2_ws/install/mypkg/share/mypkg\n'}
+[1.127171] (mypkg) StdoutLine: {'line': b'copying launch/talk_listen.launch.py -> /home/aya/ros2_ws/install/mypkg/share/mypkg\n'}
+[1.127708] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.130966] (mypkg) StdoutLine: {'line': b"removing '/home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.131783] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/aya/ros2_ws/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info\n'}
+[1.133666] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.150108] (-) TimerEvent: {}
+[1.160339] (person_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[1.160627] (person_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name\n'}
+[1.160832] (person_msgs) StderrLine: {'line': b'  person_msgs --arguments-file\n'}
+[1.161047] (person_msgs) StderrLine: {'line': b'  /home/aya/ros2_ws/build/person_msgs/rosidl_adapter__arguments__person_msgs.json\n'}
+[1.161110] (person_msgs) StderrLine: {'line': b'  --output-dir /home/aya/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs\n'}
+[1.161164] (person_msgs) StderrLine: {'line': b'  --output-file\n'}
+[1.161217] (person_msgs) StderrLine: {'line': b'  /home/aya/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs.idls)\n'}
+[1.161269] (person_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[1.161320] (person_msgs) StderrLine: {'line': b'\n'}
+[1.161371] (person_msgs) StderrLine: {'line': b"  Error processing 'tring name' of 'person_msgs/Query_Request': ''tring' is\n"}
+[1.161423] (person_msgs) StderrLine: {'line': b"  an invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''\n"}
+[1.161491] (person_msgs) StderrLine: {'line': b'\n'}
+[1.161542] (person_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[1.161593] (person_msgs) StderrLine: {'line': b'\n'}
+[1.161643] (person_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n'}
+[1.161694] (person_msgs) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[1.161747] (person_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n'}
+[1.161797] (person_msgs) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[1.161847] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[1.161899] (person_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[1.161949] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[1.161999] (person_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[1.162232] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl\n'}
+[1.162342] (person_msgs) StderrLine: {'line': b'      return convert_srv_to_idl(\n'}
+[1.162428] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl\n'}
+[1.162504] (person_msgs) StderrLine: {'line': b'      srv = parse_service_string(package_name, input_file.stem, content)\n'}
+[1.162577] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 859, in parse_service_string\n'}
+[1.162650] (person_msgs) StderrLine: {'line': b'      request_message = parse_message_string(\n'}
+[1.162720] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 520, in parse_message_string\n'}
+[1.162791] (person_msgs) StderrLine: {'line': b'      Type(type_string, context_package_name=pkg_name),\n'}
+[1.162862] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 277, in __init__\n'}
+[1.163002] (person_msgs) StderrLine: {'line': b'      super(Type, self).__init__(\n'}
+[1.163101] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__\n'}
+[1.163178] (person_msgs) StderrLine: {'line': b'      raise InvalidResourceName(\n'}
+[1.163260] (person_msgs) StderrLine: {'line': b'\n'}
+[1.163342] (person_msgs) StderrLine: {'line': b"  rosidl_adapter.parser.InvalidResourceName: 'tring' is an invalid message\n"}
+[1.163419] (person_msgs) StderrLine: {'line': b"  name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'\n"}
+[1.163495] (person_msgs) StderrLine: {'line': b'\n'}
+[1.163589] (person_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.163675] (person_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[1.163762] (person_msgs) StderrLine: {'line': b'  CMakeLists.txt:16 (rosidl_generate_interfaces)\n'}
+[1.163841] (person_msgs) StderrLine: {'line': b'\n'}
+[1.163913] (person_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.163991] (person_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.164083] (person_msgs) StdoutLine: {'line': b'See also "/home/aya/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[1.168157] (mypkg) StdoutLine: {'line': b'Installing listener script to /home/aya/ros2_ws/install/mypkg/lib/mypkg\n'}
+[1.168532] (mypkg) StdoutLine: {'line': b'Installing talker script to /home/aya/ros2_ws/install/mypkg/lib/mypkg\n'}
+[1.168834] (person_msgs) StderrLine: {'line': b'gmake: *** [Makefile:747: cmake_check_build_system] Error 1\n'}
+[1.169141] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/aya/ros2_ws/build/mypkg/install.log'\n"}
+[1.171075] (person_msgs) CommandEnded: {'returncode': 2}
+[1.195490] (mypkg) CommandEnded: {'returncode': 0}
+[1.247500] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[1.250741] (-) TimerEvent: {}
+[1.323416] (person_msgs) JobEnded: {'identifier': 'person_msgs', 'rc': 2}
+[1.334698] (-) EventReactorShutdown: {}
