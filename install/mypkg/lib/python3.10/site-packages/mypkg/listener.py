@@ -6,6 +6,7 @@ def main():
     rclpy.init()
     node = Node("listener")
     client = node.create_client(Query, 'query')
+
     while not client.wait_for_service(timeout_sec=1.0):
         node.get_logger().info('待機中')
 
