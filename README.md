@@ -5,7 +5,7 @@
 1.ターミナルを起動し、自分がコピーしたいディレクトリに移動する
 2.ターミナル上で以下のコマンドを入力する
 ```
-https://github.com/ayamaruu/person.git
+git clone https://github.com/ayamaruu/person.git
 ```
 3.以下のコマンドを打つ
 ```
